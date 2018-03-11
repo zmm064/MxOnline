@@ -16,7 +16,7 @@ class Course(models.Model):
     degree      = models.CharField(choices=DEGREE_CHOICES, max_length=2)
     learn_times = models.IntegerField('学习时长（分钟）', default=0)    
     students    = models.IntegerField('学习人数', default=0)
-    fav_num     = models.IntegerField('收藏人数', default=0)
+    fav_nums    = models.IntegerField('收藏人数', default=0)
     image       = models.ImageField('封面图', upload_to='courses/%Y/%m')
     click_nums  = models.IntegerField('点击数' ,default=0)
     add_time    = models.DateTimeField('添加时间', default=datetime.now)

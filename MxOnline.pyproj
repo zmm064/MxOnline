@@ -42,6 +42,20 @@
     <Compile Include="MxOnline\settings.py" />
     <Compile Include="MxOnline\urls.py" />
     <Compile Include="MxOnline\wsgi.py" />
+    <Compile Include="operation\admin.py" />
+    <Compile Include="operation\apps.py" />
+    <Compile Include="operation\migrations\__init__.py" />
+    <Compile Include="operation\models.py" />
+    <Compile Include="operation\tests.py" />
+    <Compile Include="operation\views.py" />
+    <Compile Include="operation\__init__.py" />
+    <Compile Include="organization\admin.py" />
+    <Compile Include="organization\apps.py" />
+    <Compile Include="organization\migrations\__init__.py" />
+    <Compile Include="organization\models.py" />
+    <Compile Include="organization\tests.py" />
+    <Compile Include="organization\views.py" />
+    <Compile Include="organization\__init__.py" />
     <Compile Include="users\admin.py" />
     <Compile Include="users\apps.py" />
     <Compile Include="users\migrations\__init__.py" />
@@ -52,6 +66,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="courses\templates\index.html" />
+    <Content Include="operation\templates\index.html" />
+    <Content Include="organization\templates\index.html" />
     <Content Include="requirements.txt" />
     <Content Include="users\templates\index.html" />
   </ItemGroup>
@@ -60,6 +76,12 @@
     <Folder Include="courses\migrations\" />
     <Folder Include="courses\templates\" />
     <Folder Include="MxOnline\" />
+    <Folder Include="operation\" />
+    <Folder Include="operation\migrations\" />
+    <Folder Include="operation\templates\" />
+    <Folder Include="organization\" />
+    <Folder Include="organization\migrations\" />
+    <Folder Include="organization\templates\" />
     <Folder Include="users\" />
     <Folder Include="users\migrations\" />
     <Folder Include="users\templates\" />
