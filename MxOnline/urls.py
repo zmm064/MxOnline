@@ -5,12 +5,14 @@ Definition of urls for MxOnline.
 import xadmin
 from xadmin.plugins import xversion
 from django.conf.urls import include, url
+from django.views.generic import TemplateView
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
 xadmin.autodiscover()
 xversion.register_models()
+from users.views import user_login
 
 urlpatterns = [
     # Examples:
@@ -23,6 +25,7 @@ urlpatterns = [
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
     url(r'xadmin/', include(xadmin.site.urls)),
-]
+    url(r'^$', TemplateView.as_view(template_name='index.html'), name='index'),
+    url(r'^login/$', user_login, name='login'),
 
-# version模块自动注册需要版本控制的 Model
+]
