@@ -34,13 +34,16 @@ class EmailVerifyRecord(models.Model):
 
     code     = models.CharField('验证码', max_length=20)
     email    = models.EmailField('邮箱', max_length=50)
-    sendtype = models.CharField(choices=SEND_TYPE_CHOICES, max_length=10)
-    sendtime = models.DateTimeField(default=datetime.now)
+    sendtype = models.CharField('验证码类型', choices=SEND_TYPE_CHOICES, max_length=10)
+    sendtime = models.DateTimeField('发送时间', default=datetime.now)
     # 默认值可以为可调用对象，这会在类实例化时生成对应的值
 
     class Meta:
         verbose_name = '邮箱验证码'
         verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return f'{self.code}({self.email})'
 
 
 class Banner(models.Model):

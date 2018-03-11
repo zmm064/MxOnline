@@ -25,7 +25,7 @@ class CourseOrg(models.Model):
     add_time    = models.DateTimeField('添加时间', default=datetime.now)
 
     class Meta:
-        verbose_name = '城市'
+        verbose_name = '课程机构'
         verbose_name_plural = verbose_name
 
 
