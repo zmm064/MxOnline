@@ -58,6 +58,9 @@
     <Compile Include="organization\__init__.py" />
     <Compile Include="users\admin.py" />
     <Compile Include="users\apps.py" />
+    <Compile Include="users\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="users\migrations\__init__.py" />
     <Compile Include="users\models.py" />
     <Compile Include="users\tests.py" />

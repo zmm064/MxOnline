@@ -12,7 +12,7 @@ from django.views.generic import TemplateView
 # admin.autodiscover()
 xadmin.autodiscover()
 xversion.register_models()
-from users.views import user_login
+from users.views import LoginView
 
 urlpatterns = [
     # Examples:
@@ -26,6 +26,6 @@ urlpatterns = [
     # url(r'^admin/', include(admin.site.urls)),
     url(r'xadmin/', include(xadmin.site.urls)),
     url(r'^$', TemplateView.as_view(template_name='index.html'), name='index'),
-    url(r'^login/$', user_login, name='login'),
+    url(r'^login/$', LoginView.as_view(), name='login'),
 
 ]
