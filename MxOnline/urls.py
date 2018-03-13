@@ -12,7 +12,7 @@ from django.views.generic import TemplateView
 # admin.autodiscover()
 xadmin.autodiscover()
 xversion.register_models()
-from users.views import LoginView
+from users.views import LoginView, RegisterView, ActiveUserView
 
 urlpatterns = [
     # Examples:
@@ -27,5 +27,8 @@ urlpatterns = [
     url(r'xadmin/', include(xadmin.site.urls)),
     url(r'^$', TemplateView.as_view(template_name='index.html'), name='index'),
     url(r'^login/$', LoginView.as_view(), name='login'),
+    url(r'^register/$', RegisterView.as_view(), name='register'),
+    url(r'^captcha/', include('captcha.urls')),
+    url(r'^active/(?P<active_code>.*)/$', ActiveUserView.as_view(), name='useractive'),
 
 ]

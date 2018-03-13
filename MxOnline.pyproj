@@ -66,6 +66,12 @@
     <Compile Include="users\tests.py" />
     <Compile Include="users\views.py" />
     <Compile Include="users\__init__.py" />
+    <Compile Include="utils\email_send.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="utils\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="courses\templates\index.html" />
@@ -453,6 +459,7 @@
     <Content Include="static\media\teacher\2016\11\aobama_CXWwMef.png" />
     <Content Include="templates\index.html" />
     <Content Include="templates\login.html" />
+    <Content Include="templates\register.html" />
     <Content Include="users\templates\index.html" />
   </ItemGroup>
   <ItemGroup>
@@ -533,6 +540,7 @@
     <Folder Include="users\" />
     <Folder Include="users\migrations\" />
     <Folder Include="users\templates\" />
+    <Folder Include="utils\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="..\..\..\Envs\python36_django11\">
