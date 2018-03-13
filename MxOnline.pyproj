@@ -457,9 +457,13 @@
     <Content Include="static\media\org\2016\12\imooc_klgAUn5.png" />
     <Content Include="static\media\teacher\2016\11\aobama.png" />
     <Content Include="static\media\teacher\2016\11\aobama_CXWwMef.png" />
+    <Content Include="templates\active_fail.html" />
+    <Content Include="templates\forgetpwd.html" />
     <Content Include="templates\index.html" />
     <Content Include="templates\login.html" />
+    <Content Include="templates\password_reset.html" />
     <Content Include="templates\register.html" />
+    <Content Include="templates\send_success.html" />
     <Content Include="users\templates\index.html" />
   </ItemGroup>
   <ItemGroup>

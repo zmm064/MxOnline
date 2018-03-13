@@ -10,3 +10,17 @@ class RegisterForm(forms.Form):
     email = forms.EmailField(required=True)
     password = forms.CharField(required=True, min_length=5)
     captcha = CaptchaField()
+
+
+class ForgetForm(forms.Form):
+    # 此处email与前端name需保持一致。
+    email = forms.EmailField(required=True)
+    # 应用验证码 自定义错误输出key必须与异常一样
+    captcha = CaptchaField(error_messages={"invalid": "验证码错误"})
+
+
+class ModifyPwdForm(forms.Form):
+    # 密码不能小于5位
+    password1 = forms.CharField(required=True, min_length=5)
+    # 密码不能小于5位
+    password2 = forms.CharField(required=True, min_length=5)
