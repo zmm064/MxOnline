@@ -75,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="courses\templates\index.html" />
+    <Content Include="media\org\2018\03\慕课.jpg" />
     <Content Include="operation\templates\index.html" />
     <Content Include="organization\templates\index.html" />
     <Content Include="requirements.txt" />
@@ -461,6 +462,8 @@
     <Content Include="templates\forgetpwd.html" />
     <Content Include="templates\index.html" />
     <Content Include="templates\login.html" />
+    <Content Include="templates\base.html" />
+    <Content Include="templates\org-list.html" />
     <Content Include="templates\password_reset.html" />
     <Content Include="templates\register.html" />
     <Content Include="templates\send_success.html" />
@@ -483,7 +486,11 @@
     <Folder Include="courses\" />
     <Folder Include="courses\migrations\" />
     <Folder Include="courses\templates\" />
+    <Folder Include="media\org\" />
+    <Folder Include="media\org\2018\" />
+    <Folder Include="media\org\2018\03\" />
     <Folder Include="MxOnline\" />
+    <Folder Include="media\" />
     <Folder Include="operation\" />
     <Folder Include="operation\migrations\" />
     <Folder Include="operation\templates\" />
