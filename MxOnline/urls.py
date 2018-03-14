@@ -35,9 +35,9 @@ urlpatterns = [
     url(r'^active/(?P<active_code>.*)/$', ActiveUserView.as_view(), name='useractive'),
     url(r'^reset/(?P<active_code>.*)/$', ResetView.as_view(), name='reset_pwd'),
     url(r'^forget/$', ForgetPwdView.as_view(), name='forget_pwd'),
-    url(r'^org-list/$', OrgView.as_view(), name='org-list'),
     
-
+    
+    url(r'^org/', include('organization.urls', namespace='org')),
     # 配置静态文件的处理服务器
     url(r'media/(?P<path>.*)/$', serve, {'document_root':MEDIA_ROOT}),
 ]

@@ -51,9 +51,13 @@
     <Compile Include="operation\__init__.py" />
     <Compile Include="organization\admin.py" />
     <Compile Include="organization\apps.py" />
+    <Compile Include="organization\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="organization\migrations\__init__.py" />
     <Compile Include="organization\models.py" />
     <Compile Include="organization\tests.py" />
+    <Compile Include="organization\urls.py" />
     <Compile Include="organization\views.py" />
     <Compile Include="organization\__init__.py" />
     <Compile Include="users\admin.py" />
